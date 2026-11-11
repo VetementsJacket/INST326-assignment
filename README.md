@@ -1,2 +1,2 @@
-# INST326-assignment
-Assignment for INST326 collar programming
+# INST326
+INST326 project
