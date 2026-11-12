@@ -1,2 +1,2 @@
-def random_question(self, bank, difficulty, history):
+def filter_questions(difficulty):
     
