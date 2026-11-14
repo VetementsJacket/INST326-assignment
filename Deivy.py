@@ -5,9 +5,9 @@ def shuffle_answers(correct_answer, incorrect_answers):
     """
     Randomizes the display order of multiple-choice answers.
 
-    Combines the correct answer with all incorrect answer choices
-    into a single list. Uses a randomization process to shuffle
-    the positions of the answers so that players cannot memorize
+    It combines the correct answer with all other incorrect answer choices
+    into a single list. Then it utilizes a randomization process to shuffle
+    the positions of the answers so that players can't memorize
     the correct answer's letter or position.
 
     Args:
@@ -15,7 +15,7 @@ def shuffle_answers(correct_answer, incorrect_answers):
         incorrect_answers (list): A collection of incorrect answers.
 
     Returns:
-        list: A shuffled list containing the correct answer and
+        list: A shuffled list that which contains the correct answer and
         all incorrect answer choices.
 
     Primary Author:
