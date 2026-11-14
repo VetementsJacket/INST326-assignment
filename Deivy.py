@@ -1,7 +1,6 @@
 import random
 
 
-# Function 1: Shuffle Answer Choices
 def shuffle_answers(correct_answer, incorrect_answers):
     """
     Randomizes the display order of multiple-choice answers.
@@ -44,36 +43,3 @@ def shuffle_answers(correct_answer, incorrect_answers):
 
     return answers
 
-
-# Function 2: Map Correct Answer Index
-def find_correct_index(shuffled_answers, correct_answer):
-    """
-    Finds and records the correct answer's position after shuffling.
-
-    Searches through the randomized answer list to identify the
-    position of the correct answer. Records its index so the game
-    can compare the player's selection against the correct answer.
-
-    Args:
-        shuffled_answers (list): The randomized collection of answers.
-        correct_answer (str): The correct answer to the question.
-
-    Returns:
-        int: The index position of the correct answer.
-
-    Raises:
-        ValueError: If the correct answer cannot be found in the
-        shuffled answer collection.
-
-    Primary Author:
-        Deivy Casso II
-    """
-
-    if not isinstance(shuffled_answers, list):
-        raise ValueError("Shuffled answers must be a list.")
-
-    for index, answer in enumerate(shuffled_answers):
-        if answer == correct_answer:
-            return index
-
-    raise ValueError("Correct answer was not found in the shuffled answers.")
